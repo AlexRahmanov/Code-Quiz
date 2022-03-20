@@ -27,3 +27,8 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
+# Screenshot Code Quiz
+![Alt text](https://github.com/AlexRahmanov/Code-Quiz/blob/main/assets/img/pic1.jpg)
+![Alt text](https://github.com/AlexRahmanov/Code-Quiz/blob/main/assets/img/pic2.jpg)
+![Alt text](https://github.com/AlexRahmanov/Code-Quiz/blob/main/assets/img/pic3.jpg)
+
