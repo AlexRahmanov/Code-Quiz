@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Coding Quiz Challenge</title>
+</head>
+
+<body>
+
+<nav>
+    <a href="#" id="highscoreLink">View Highscores</a>
+    <div id="timer">Time: <span id="timerValue">0</span></div>
+</nav>
+
+<div id="container1" class="container">
+    <div class="row">
+        <div class="col-11 col-md-7 text-center mt-5 mx-auto">
+            <h3>Coding Quiz Challenge</h3>
+        </div>
+    </div>
+    <!--Rules befor start-->
+    <div class="row">
+        <div class="col-11 col-md-7 text-center mx-auto">
+            <p>Try to answer the following code-related questions within the time limit.<br/>
+                Keep in mind that incorrect answers will penalize your score/time by 10 seconds.
+            </p>
+        </div>
+    </div>
+    <!--Start button-->
+    <div class="row">
+        <div class="col-11 col-md-7 text-center mx-auto">
+            <button type="button" class="btn btn-primary" id="startQuiz">Start Quiz</button>
+        </div>
+    </div>
+</div>
+<!--List of questions and answers-->
+<div id="container2" class="container hide">
+    <div class="row"> 
+        <div class="col-11 col-md-7 mx-auto mt-5">
+            <h4 id="quizQuestion">This is the quiz question.</h4>
+            <ul id="allAnswers">
+            <li>
+                <button type="button" class="btn btn-primary" id="question1">1. <span id="questionValue1">Answer</span></button>
+            </li>
+            
+            <li>
+                <button type="button" class="btn btn-primary" id="question2">2. <span id="questionValue2">Answer</span></button>
+            </li>
+
+            <li>
+                <button type="button" class="btn btn-primary" id="question3">3. <span id="questionValue3">Answer</span></button>
+            </li>
+            
+            <li>
+                <button type="button" class="btn btn-primary" id="question4">4. <span id="questionValue4">Answer</span></button>
+            </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="container3" class="container hide">
+    <div class="row">
+        <div class="col-11 col-md-8 col-lg-6 mx-auto mt-5">
+            <h4>All done!</h4>
+        </div>
+    </div>
+    <!--Final score-->
+    <div class="row">
+        <div class="col-11 col-md-8 col-lg-6 mx-auto">
+            <p>Your final score is <span id="finalScore">0</span>.</p>
+        </div>
+    </div>
+    <!--Initials and Submit-->
+    <div class="row">
+        <div class="col-11 col-md-8 col-lg-6 mx-auto">
+            <form class="form-inline">
+                <div class="form-group mb-2">
+                    <label>Enter initials: </label>
+                </div>
+
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="initialsInput" class="sr-only"></label>
+                    <input type="text" class="form-control" id="initialsInput" />
+                </div>
+
+                <button type="submit" id="submit" class="btn btn-primary mb-2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Highscores view-->
+<div id="container4" class="container hide">
+    <div class="row">
+        <div class="col-8 col-md-6 col-lg-4 mx-auto mt-5">
+            <h4>Highscores</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8 col-md-6 col-lg-4 mx-auto">
+            <ol id="highscoreList"></ol>
+        </div>
+    </div>
+
+    <!--Button section-->
+    <div class="row">
+        <div class="col-8 col-md-6 col-lg-4 mx-auto">
+            <button id="goBack" class="btn btn-primary mb-2 mr-2">Go Back</button>
+            <button id="clear" class="btn btn-primary mb-2">Clear Highscores</button>
+        </div>
+    </div>
+</div>
+
+<!--Correct & Wrong answers-->
+<div class="container">
+    <div class="row">
+        <div class="col-11 col-md-7 mx-auto">
+            <h5 id="correct" class="text-secondary border-top hide">Correct!</h5>
+            <h5 id="wrong" class="text-secondary border-top hide">Wrong!</h5>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
